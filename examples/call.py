@@ -1,5 +1,4 @@
 from googlevoice import Voice
-from googlevoice.util import input
 
 
 voice = Voice()
@@ -9,14 +8,12 @@ try:
 	user_name = user_info.readline()
 	user_pass = user_info.readline()
 	voice.login(user_name, user_pass)
-	outgoingNumber = '5172902947'
-	forwardingNumber = '0000000000'
+	outgoingNumber = '2697497663'
+	forwardingNumber = '5172902947'
+
 	user_info.close()
 except:
 	voice.login()
-finally:
-	voice.call(outgoingNumber, forwardingNumber)
 
-if input('Calling now... cancel?[y/N] ').lower() == 'y':
-    voice.cancel(outgoingNumber, forwardingNumber)
+voice.call(outgoingNumber, forwardingNumber)
 
