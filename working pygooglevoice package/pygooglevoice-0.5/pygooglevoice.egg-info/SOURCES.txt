@@ -1,0 +1,14 @@
+setup.py
+bin/asterisk-gvoice-setup
+bin/gvi
+bin/gvoice
+googlevoice/__init__.py
+googlevoice/conf.py
+googlevoice/settings.py
+googlevoice/tests.py
+googlevoice/util.py
+googlevoice/voice.py
+pygooglevoice.egg-info/PKG-INFO
+pygooglevoice.egg-info/SOURCES.txt
+pygooglevoice.egg-info/dependency_links.txt
+pygooglevoice.egg-info/top_level.txt
